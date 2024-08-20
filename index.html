@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Fernanda</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="icon" href="assets/icons8-gostar-96.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+
+<body class="fundo1">
+
+    <!-- <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div> -->
+
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Bien-venida</h1>
+            <p>Estás lista?</p>
+            <button class="mudaTela btn-azul">Comenzar</button>
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de empezar<br> una pequeña prueba para ver si eres digna:</small>
+                <br>
+                <strong>¿Conoces a esta persona?</strong>
+            </p>
+            <img src="imagens/tela1.jpeg" class="custom" width="150" alt="Amor de mi vida">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Si</button>
+            <br>
+            <button class="btn-vermelho btn-block"
+                onclick="alert('Entonces no deberías acceder a este sitio web. ¡Fuera de aquí!');window.location.href='https://dle.rae.es/pendejo'; ">No</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>¿Conoces a esta persona?</strong><br>Fíjate bien en esto: <br>Perfección</p>
+
+            <img src="imagens/tela3.jpeg" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">¡Sí, la conozco!</button>
+            <br>
+            <button class="btn-block btn-vermelho"
+                onclick="alert('Está bien, entiendo tu vergüenza.');window.location.href='https://dle.rae.es/estúpido'; ">No,
+                Dios no lo quiera</button>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Espera...</h2>
+
+            <img src="imagens/tela4.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>¿Es mi <strong> futura novia</strong> la que accede ahora a esta página?
+                <br><small class="text-muted" style="font-weight: 700;">Sí, tú cuyo nombre empieza con F de
+                    Fernanda</small>
+            </p>
+
+            <button class="mudaTela btn-azul">Si, soy yo</button>
+            <button class="mudaTela btn-vermelho btn-block"
+                onclick="alert('¡Deberías darte vergüenza de estar aquí!\n\nBueno, sé que aunque te lleve a otra página, volverás aquí más tarde porque tu curiosidad te obliga a hacerlo, así que como soy una buena persona te dejaré continúas a la página siguiente.');">No,
+                soy amiga o conocida de Fernanda que está accediendo a este sitio, a pesar de que Marcello le dijo que
+                no se lo pasara a nadie, por lo que no pudo contenerse y me envió este enlace. <br> ¡ESTE BOTÓN ES
+                GIGANTE!</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p><strong> Si todo funciona según lo planeado, deberías escuchar música de fondo.</strong> </p>
+            <hr>
+            <p><small>Cuando lo estés escuchando, haz clic en continuar.</small></p>
+            <button class="mudaTela btn-azul"
+                onclick="alert('Haz clic en continuar...\n\nMi pito va a brincar');">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;"
+            tempo="3000">
+            <div tempo="00001">
+                <p>Mi amor Fernanda...</p>
+            </div>
+            <div tempo="00001">
+                <p>Desde que te conocí, algo cambió en mí...</p>
+            </div>
+            <div tempo="00001">
+                <p>No sabía que podía sentirme así.</p>
+            </div>
+            <div tempo="00001">
+                <p>Cada día que pasa, descubro algo nuevo para admirar en ti</p>
+            </div>
+            <div tempo="00001">
+                <p>Has traído color a mis días grises y paz a mi corazón agitado</p>
+            </div>
+            <div tempo="00001">
+                <p>Por más que no nos veamos tanto...</p>
+            </div>
+            <div tempo="00001" final="true">
+                <p>Tu presencia ilumina mi vida de una manera que nunca imaginé.</p>
+            </div>
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"
+            tempo="3000">
+            <div tempo="00001">
+                <p>Todo lo que hago ahora es pensando en nosotros dos</p>
+            </div>
+            <div tempo="00001">
+                <p>Cada sonrisa tuya es un regalo que guardo con cariño</p>
+            </div>
+            <div tempo="00001">
+                <p>Quiero estar a tu lado, compartir cada momento, cada sueño</p>
+            </div>
+            <div tempo="00001">
+                <p>Fernanda, mi vida cambió desde que entraste en ella... y no quiero volver atrás.</p>
+            </div>
+            <div tempo="00001" final="true">
+                <p>Te amo mucho mi girasol 🌻</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo9" tempo="6000">
+
+            <p><strong>Quiero mostrarte algo.</strong> </p>
+            <p class="letra-vermelha">puedo?</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela9" class="tela" fundo="fundo5">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Nuestro Encuentro</h2>
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Nuestra historia comenzó de una manera simple,
+                            en un supermercado, donde el destino nos puso uno al lado del otro.</strong></p>
+                    <img src="imagens/tela8-1.jpeg" alt="">
+                    <p><strong class="letra-vermelha">¿Tienes noción de que tú vienes de Venezuela y yo vengo de Ceará,
+                            y que nos encontramos aquí en Santa Catarina?</strong></p>
+                </div>
+                <hr>
+                <p>Yo trabajava en la auditoría y tú en la panadería, nuestros miradas se cruzaban, pero las palabras
+                    eran pocas.</p>
+                <p>Las ocasiones de la vida nos separo y nos reunió de nuevo.</p>
+                <img src="imagens/tela9-2.jpeg" alt="">
+                <p>El 20/07/2024, tuvimos nuestra <strong class="letra-vermelha">"primera cita oficial"</strong>, y
+                    desde entonces, mi corazón solo piensa en vivir un futuro a tu lado.</p>
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Mis Sentimientos</h2>
+                    <img src="imagens/tela1-1.jpeg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Esta es mi foto favorita tuya.</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">Fernanda, desde el momento en que nos
+                        reencontramos, sentí que mi corazón renació.</span> El amor que siento por ti es como una llama
+                    que nunca se apaga, siempre fuerte, siempre presente.</p>
+                <p>Cada momento a tu lado es un recuerdo precioso que guardo con cariño.</p>
+                <p>Cuando pienso en nosotros dos, me veo realizando sueños a tu lado, explorando el mundo, descubriendo
+                    nuevos lugares, pero principalmente, construyendo un hogar donde la alegría y el amor siempre serán
+                    bienvenidos.</p>
+                <p>Eres la persona que transformó mi mundo y que devolvió la esperanza de vivir un gran amor. Quiero
+                    estar a tu lado en cada momento, en cada logro, y enfrentar juntos los desafíos de la vida, como un
+                    equipo, como almas gemelas.</p>
+                <hr>
+
+                <div class="text-center">
+                    <p>Y este es solo el comienzo,</p>
+                    <p><strong class="text-muted">nuestro comienzo.</strong></p>
+                </div>
+
+
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">Nuestro Futuro Juntos</h2>
+                    <img src="imagens/tela11.jpg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Cuando pienso en nuestro futuro, Fernanda, veo
+                            un horizonte lleno de posibilidades y felicidad.</strong></p>
+                </div>
+                <hr>
+                <p>Sueño con los viajes que haremos juntos, explorando Brasil y conociendo Venezuela, el país que es
+                    parte de quien eres y que se convertirá en parte de nosotros.</p>
+                <p>Veo nuestra casa, un lugar donde cada rincón contará nuestra historia, donde nuestros hijos crecerán
+                    rodeados de amor y donde nosotros dos continuaremos apoyándonos mutuamente en nuestros sueños y
+                    logros profesionales.</p>
+                <p>Fernanda, deseo pasar el resto de mi vida contigo, construyendo una vida tan hermosa como el amor que
+                    compartimos. Sé que, juntos, podemos conquistar todo lo que soñamos, porque nuestro amor es fuerte,
+                    verdadero y está destinado a durar para siempre.</p>
+                <hr>
+                <h3 class="letra-vermelha mt-5 mb-5">¿Quieres ser mi novia?</h3>
+            </div>
+            <button class="btn-block mudaTela btn-azul mt-3">SI ❤️</button>
+            <br>
+            <button id="btn-vermelho">No 😞</button>
+
+        </div>
+
+        <div id="tela12" class="tela" fundo="fundo8">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h3 class="letra-vermelha">TE AMO MEU AMOR!</h3>
+                    <img src="imagens/tela12.jpg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Obrigado por fazer parte da minha vida!</strong>
+                    </p>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+        <!-- <div id="tela20" class="invisivel letra2 temporizado tela-centro" fundo="fundo9" style="color: #FFF;" tempo="1500" >
+            <div tempo="2000" class="text-center">
+                <img src="imagens/tela8.png" alt="">
+                <p class="mb-0">Obrigado por estar comigo.</p>
+                <div class="text-center">
+                    <span style="font-size:0.4em; color: #555;">fim</span>
+                </div>    
+            </div>  
+        </div>        -->
+    </div>
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+
+</html>
